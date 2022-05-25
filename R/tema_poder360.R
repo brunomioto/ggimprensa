@@ -14,7 +14,6 @@ tema_poder360 <- function(base_size = 12, base_family = "sans") {
          plot.title = element_text(hjust = 0.5,
                                    color = "#0a4b7f",
                                    face = "bold",
-                                   family = "Arial",
                                    size = rel(2)),
          plot.subtitle = element_text(hjust = 0.5,
                                       color = "#263238"),
@@ -27,3 +26,31 @@ tema_poder360 <- function(base_size = 12, base_family = "sans") {
          panel.grid = element_blank()
    ))
 }
+
+
+#' Adiciona linha superior
+#'
+#' @param plot
+#'
+#' @return
+#' @export
+#' @importFrom grid cowplot
+#' @examples
+#'
+linha_poder360 <- function(plot){
+  rect <- grid::rectGrob(
+    x = 0.5,
+    y = 1,
+    width = 0.25,
+    height = 0.01,
+    hjust = 0.5,
+    vjust = 1,
+    gp = grid::gpar(col = NA, fill = "#fd541e")
+  )
+
+  cowplot::ggdraw(plot) +
+    cowplot::draw_grob(rect)
+}
+
+
+
