@@ -4,7 +4,6 @@
 #' @inheritParams ggplot2::theme_grey
 #' @family themes poder360
 #' @export
-#' @importFrom grid unit
 #'
 tema_poder360 <- function(base_size = 12, base_family = "sans") {
   (theme_foundation(base_size = base_size, base_family = base_family)
@@ -34,8 +33,6 @@ tema_poder360 <- function(base_size = 12, base_family = "sans") {
 #'
 #' @return
 #' @export
-#' @importFrom grid cowplot
-#' @examples
 #'
 linha_poder360 <- function(plot){
   rect <- grid::rectGrob(

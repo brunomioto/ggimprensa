@@ -15,6 +15,3 @@ linha_poder360(plot)
 \description{
 Adiciona linha superior
 }
-\examples{
-
-}
