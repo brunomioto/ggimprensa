@@ -47,7 +47,7 @@ p1 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
 p1
 ```
 
-<img src="man/figures/README-exemplo poder360-1.png" width="50%" />
+<img src="man/figures/README-exemplo poder360-1.png" width="80%" />
 
 Caso queira adicionar a faixa superior ao gráfico, utilize a função
 `linha_poder360()`
@@ -56,7 +56,7 @@ Caso queira adicionar a faixa superior ao gráfico, utilize a função
 linha_poder360(p1)
 ```
 
-<img src="man/figures/README-linha-1.png" width="50%" />
+<img src="man/figures/README-linha-1.png" width="80%" />
 
 ### G1
 
@@ -72,7 +72,7 @@ p2 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
 p2
 ```
 
-<img src="man/figures/README-exemplo g1-1.png" width="50%" />
+<img src="man/figures/README-exemplo g1-1.png" width="80%" />
 
 ### Nexo
 
@@ -88,4 +88,4 @@ p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
 p3
 ```
 
-<img src="man/figures/README-exemplo nexo-1.png" width="50%" />
+<img src="man/figures/README-exemplo nexo-1.png" width="80%" />
