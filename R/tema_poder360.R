@@ -5,6 +5,8 @@
 #' @family themes poder360
 #' @export
 #' @importFrom grid unit
+#' @note
+#'  Caso queira adicionar a linha superior, utilize a função `linha_poder360(plot)`
 tema_poder360 <- function(base_size = 12, base_family = "sans") {
   (ggimprensa::tema_base(base_size = base_size, base_family = base_family)
    + theme(plot.margin = margin(t = 18, r = 20, b = 6, l = 20),

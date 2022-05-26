@@ -1,4 +1,16 @@
+title: ggimprensa
 url: https://brunomioto.github.io/ggimprensa/
 template:
-  bootstrap: 5
+  params:
+    bootswatch: flatly
 
+authors:
+  Bruno Mioto:
+  href: https://brunomioto.com.br
+
+reference:
+  - title: Temas dos jornais brasileiros
+    contents:
+      - '`tema_poder360`'
+      - '`tema_g1`'
+      - '`tema_nexo`'
