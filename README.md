@@ -9,10 +9,13 @@
 Follow](https://img.shields.io/twitter/follow/BrunoHMioto?color=%2315202B&label=Seguir%20%40BrunoHMioto&style=social)](https://twitter.com/BrunoHMioto)
 <!-- badges: end -->
 
-Temas dos principais jornais brasileiros para o ggplot2 Esse pacote foi
-inspirado no pacote [ggthemes](https://github.com/jrnold/ggthemes). O
-objetivo deste pacote é ajudar os usuários a criar gráficos mais bonitos
-de forma fácil e rápida.
+Temas dos principais jornais brasileiros para o ggplot2.
+
+Esse pacote foi inspirado no pacote
+[ggthemes](https://github.com/jrnold/ggthemes).
+
+O objetivo deste pacote é ajudar os usuários a criar gráficos mais
+bonitos de forma fácil e rápida.
 
 ## Instalação
 
@@ -109,8 +112,8 @@ Todos sabemos que as **fakenews** são um problema nos dias de hoje, e
 alguns podem levantar o (válido) ponto sobre este pacote contribuir com
 isso. No entanto, alguns pontos devem ser levantados:
 
--   O pacote **ggthemes** já existe há um bom tempo, com temas dos
-    principais jornais do mundo.
+-   O pacote [ggthemes](https://github.com/jrnold/ggthemes) já existe há
+    um bom tempo, com temas dos principais jornais do mundo.
 
 -   Para criar uma notícia falsa, é muito mais simples criar uma
     montagem com o tema dos gráficos do que programar com ggplot2. Além
