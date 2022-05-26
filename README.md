@@ -106,9 +106,9 @@ p3
 
 <img src="man/figures/README-exemplo nexo-1.png" width="80%" />
 
-## Sobre fakenews
+## Sobre fake news
 
-Todos sabemos que as **fakenews** são um problema nos dias de hoje, e
+Todos sabemos que as **fake news** são um problema nos dias de hoje, e
 alguns podem levantar o (válido) ponto sobre este pacote contribuir com
 isso. No entanto, alguns pontos devem ser levantados:
 

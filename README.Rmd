@@ -113,9 +113,9 @@ p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
 p3
 ```
 
-## Sobre fakenews
+## Sobre fake news
 
-Todos sabemos que as **fakenews** são um problema nos dias de hoje, e alguns podem levantar o (válido) ponto sobre este pacote contribuir com isso.
+Todos sabemos que as **fake news** são um problema nos dias de hoje, e alguns podem levantar o (válido) ponto sobre este pacote contribuir com isso.
 No entanto, alguns pontos devem ser levantados:
 
 - O pacote [ggthemes](https://github.com/jrnold/ggthemes) já existe há um bom tempo, com temas dos principais jornais do mundo.
