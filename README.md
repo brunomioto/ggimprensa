@@ -1,13 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ggimprensa
+# **ggimprensa** <img src="man/figures/logo.png" align="right" height="120" />
 
 <!-- badges: start -->
+
+[![Twitter
+Follow](https://img.shields.io/twitter/follow/BrunoHMioto?color=%2315202B&label=Seguir%20%40BrunoHMioto&style=social)](https://twitter.com/BrunoHMioto)
 <!-- badges: end -->
 
-Esse pacote foi inspirado no pacote
-[ggthemes](https://github.com/jrnold/ggthemes)
+Temas dos principais jornais brasileiros para o ggplot2 Esse pacote foi
+inspirado no pacote [ggthemes](https://github.com/jrnold/ggthemes)
 
 ## Instalação
 
