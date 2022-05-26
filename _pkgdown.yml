@@ -14,3 +14,8 @@ reference:
       - '`tema_poder360`'
       - '`tema_g1`'
       - '`tema_nexo`'
+  - title: Outras funções
+    contents:
+      - '`linha_poder360`'
+      - '`tema_base`'
+
