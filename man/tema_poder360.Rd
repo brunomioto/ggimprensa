@@ -15,6 +15,6 @@ tema_poder360(base_size = 12, base_family = "sans")
 Tema inspirado nos graficos do jornal Poder 360
 }
 \note{
-Caso queira adicionar a linha superior, utilize a função `linha_poder360(plot)`
+Caso queira adicionar a linha superior, utilize a funcao `linha_poder360(plot)`
 }
 \concept{themes poder360}
