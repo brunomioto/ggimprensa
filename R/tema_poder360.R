@@ -4,9 +4,9 @@
 #' @inheritParams ggplot2::theme_grey
 #' @family themes poder360
 #' @export
-#'
+#' @importFrom grid unit
 tema_poder360 <- function(base_size = 12, base_family = "sans") {
-  (theme_foundation(base_size = base_size, base_family = base_family)
+  (ggimprensa::tema_base(base_size = base_size, base_family = base_family)
    + theme(plot.margin = margin(t = 18, r = 20, b = 6, l = 20),
          plot.background = element_rect(fill = "#eceff1", color = NA),
          panel.background = element_rect(fill = NA, color = NA),
@@ -24,6 +24,7 @@ tema_poder360 <- function(base_size = 12, base_family = "sans") {
          axis.ticks = element_blank(),
          panel.grid = element_blank()
    ))
+
 }
 
 

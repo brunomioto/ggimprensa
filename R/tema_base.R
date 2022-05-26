@@ -1,4 +1,4 @@
-#' Foundation Theme
+#' Tema base
 #'
 #' This theme is designed to be a foundation from which to build new
 #' themes, and not meant to be used directly. \code{theme_foundation()}
@@ -18,7 +18,7 @@
 #' @family themes
 #' @export
 #' @importFrom ggplot2 theme_grey
-theme_foundation <- function(base_size=12, base_family="") {
+tema_base <- function(base_size=12, base_family="") {
   thm <- theme_grey(base_size = base_size, base_family = base_family)
   for (i in names(thm)) {
     if ("colour" %in% names(thm[[i]])) {
