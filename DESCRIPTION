@@ -6,7 +6,7 @@ Authors@R:
            family = "Mioto",
            role = c("aut", "cre"),
            email = "brunomioto97@gmail.com",
-           comment = c(ORCID = "0000-0002-3524-537X")
+           comment = c(ORCID = "0000-0002-3524-537X"))
 Description: Faça gráficos profissionais inspirtados nos jornais brasileiros.
 License: MIT + file LICENSE
 URL: https://github.com/brunomioto/ggimprensa
