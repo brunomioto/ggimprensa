@@ -2,9 +2,9 @@
 % Please edit documentation in R/tema_nexo.R
 \name{tema_nexo}
 \alias{tema_nexo}
-\title{Tema inspirado nos gráficos do Nexo Jornal}
+\title{Tema inspirado nos graficos do Nexo Jornal}
 \usage{
-tema_nexo(base_size = 12, base_family = "")
+tema_nexo(base_size = 12, base_family = "sans")
 }
 \arguments{
 \item{base_size}{base font size, given in pts.}
@@ -12,11 +12,13 @@ tema_nexo(base_size = 12, base_family = "")
 \item{base_family}{base font family}
 }
 \description{
-Tema inspirado nos gráficos do Nexo Jornal
+Tema inspirado nos graficos do Nexo Jornal
 }
 \note{
-Fontes originais:
- Título e subtítulo: Sentinel
- Gráfico: Gotham Rounded
+Fontes originais
+
+ Titulo e subtitulo: Sentinel
+
+ Grafico: Gotham Rounded
 }
 \concept{themes nexo}

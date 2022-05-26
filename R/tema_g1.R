@@ -1,4 +1,4 @@
-#' Tema inspirado nos gráficos do G1 (globo.com)
+#' Tema inspirado nos graficos do G1 (globo.com)
 #'
 #'
 #' @inheritParams ggplot2::theme_grey
@@ -6,10 +6,12 @@
 #' @export
 #' @importFrom grid unit
 #' @note
-#'  Fontes originais:
-#'  Título e subtítulo:
-#'  Gráfico:
-tema_g1 <- function(base_size = 12, base_family = "") {
+#'  Fontes originais
+#'
+#'  Titulo e subtitulo:
+#'
+#'  Grafico:
+tema_g1 <- function(base_size = 12, base_family = "sans") {
   (ggimprensa::tema_base(base_size = base_size, base_family = base_family)
    + theme(plot.margin = margin(t = 10, r = 10, b = 10, l = 10),
      plot.background = element_rect(fill = "#ffffff", color = NA),

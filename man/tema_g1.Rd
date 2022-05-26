@@ -2,9 +2,9 @@
 % Please edit documentation in R/tema_g1.R
 \name{tema_g1}
 \alias{tema_g1}
-\title{Tema inspirado nos gráficos do G1 (globo.com)}
+\title{Tema inspirado nos graficos do G1 (globo.com)}
 \usage{
-tema_g1(base_size = 12, base_family = "")
+tema_g1(base_size = 12, base_family = "sans")
 }
 \arguments{
 \item{base_size}{base font size, given in pts.}
@@ -12,11 +12,13 @@ tema_g1(base_size = 12, base_family = "")
 \item{base_family}{base font family}
 }
 \description{
-Tema inspirado nos gráficos do G1 (globo.com)
+Tema inspirado nos graficos do G1 (globo.com)
 }
 \note{
-Fontes originais:
- Título e subtítulo:
- Gráfico:
+Fontes originais
+
+ Titulo e subtitulo:
+
+ Grafico:
 }
 \concept{themes g1}

@@ -1,4 +1,4 @@
-#' Tema inspirado nos gráficos do Nexo Jornal
+#' Tema inspirado nos graficos do Nexo Jornal
 #'
 #'
 #' @inheritParams ggplot2::theme_grey
@@ -6,10 +6,12 @@
 #' @export
 #' @importFrom grid unit
 #' @note
-#'  Fontes originais:
-#'  Título e subtítulo: Sentinel
-#'  Gráfico: Gotham Rounded
-tema_nexo <- function(base_size = 12, base_family = "") {
+#'  Fontes originais
+#'
+#'  Titulo e subtitulo: Sentinel
+#'
+#'  Grafico: Gotham Rounded
+tema_nexo <- function(base_size = 12, base_family = "sans") {
   (ggimprensa::tema_base(base_size = base_size, base_family = base_family)
    + theme(#plot.margin = margin(t = 18, r = 20, b = 6, l = 20),
            plot.background = element_rect(fill = "#eeeeee", color = NA),

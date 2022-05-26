@@ -2,7 +2,7 @@
 % Please edit documentation in R/tema_poder360.R
 \name{tema_poder360}
 \alias{tema_poder360}
-\title{Tema inspirado nos gráficos do jornal Poder 360}
+\title{Tema inspirado nos graficos do jornal Poder 360}
 \usage{
 tema_poder360(base_size = 12, base_family = "sans")
 }
@@ -12,6 +12,6 @@ tema_poder360(base_size = 12, base_family = "sans")
 \item{base_family}{base font family}
 }
 \description{
-Tema inspirado nos gráficos do jornal Poder 360
+Tema inspirado nos graficos do jornal Poder 360
 }
 \concept{themes poder360}

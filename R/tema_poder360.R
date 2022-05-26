@@ -1,4 +1,4 @@
-#' Tema inspirado nos gráficos do jornal Poder 360
+#' Tema inspirado nos graficos do jornal Poder 360
 #'
 #'
 #' @inheritParams ggplot2::theme_grey
