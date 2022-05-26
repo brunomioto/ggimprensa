@@ -1,4 +1,4 @@
-#' Tema inspirado nos graficos do G1 (globo.com)
+#' Tema inspirado nos graficos do G1 - globo.com
 #'
 #'
 #' @inheritParams ggplot2::theme_grey

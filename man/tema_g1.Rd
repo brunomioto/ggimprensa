@@ -2,7 +2,7 @@
 % Please edit documentation in R/tema_g1.R
 \name{tema_g1}
 \alias{tema_g1}
-\title{Tema inspirado nos graficos do G1 (globo.com)}
+\title{Tema inspirado nos graficos do G1 - globo.com}
 \usage{
 tema_g1(base_size = 12, base_family = "sans")
 }
@@ -12,7 +12,7 @@ tema_g1(base_size = 12, base_family = "sans")
 \item{base_family}{base font family}
 }
 \description{
-Tema inspirado nos graficos do G1 (globo.com)
+Tema inspirado nos graficos do G1 - globo.com
 }
 \note{
 Fontes originais
