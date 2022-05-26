@@ -41,7 +41,9 @@ library("ggimprensa")
 p1 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
   geom_col(fill = "#fd541e")+
   labs(
-    title = "Número de pinguins por ilha"
+    title = "Número de pinguins por ilha",
+    subtitle = "Registros feitos de 2007 a 2009",
+    caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
   tema_poder360()
 p1
@@ -64,7 +66,9 @@ linha_poder360(p1)
 p2 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
   geom_col(fill = "#c6160d")+
   labs(
-    title = "Número de pinguins por ilha"
+    title = "Número de pinguins por ilha",
+    subtitle = "Registros feitos de 2007 a 2009",
+    caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
   scale_y_continuous(expand = expansion(mult = c(0,0.1)))+
   tema_g1()
@@ -80,7 +84,9 @@ p2
 p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
   geom_col(fill = "#15c5ce")+
   labs(
-    title = "Número de pinguins por ilha"
+    title = "Número de pinguins por ilha",
+    subtitle = "Registros feitos de 2007 a 2009",
+    caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
   scale_y_continuous(expand = expansion(mult = c(0,0.1)))+
   tema_nexo()
