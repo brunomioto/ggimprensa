@@ -100,3 +100,17 @@ p3
 ```
 
 <img src="man/figures/README-exemplo nexo-1.png" width="80%" />
+
+## Melhorias e sugestões
+
+Tem alguma ideia para o pacote ou sugestão de como posso melhorá-lo?
+Crie uma nova [issue](https://github.com/brunomioto/ggimprensa/issues)
+para que eu possa ajudar!
+
+## Créditos
+
+Esse pacote foi criado por [Bruno
+Mioto](https://twitter.com/BrunoHMioto)
+
+A hex logo foi criada por [Ícaro
+Bernardes](https://twitter.com/IcaroBSC)

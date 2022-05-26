@@ -1,5 +1,4 @@
 Package: ggimprensa
-Type: Package
 Title: Temas dos principais jornais brasileiros para o ggplot2
 Version: 0.1.0
 Authors@R: 
@@ -7,9 +6,14 @@ Authors@R:
            family = "Mioto",
            role = c("aut", "cre"),
            email = "brunomioto97@gmail.com",
-           comment = c(ORCID = "0000-0002-3524-537X"))
+           comment = c(ORCID = "0000-0002-3524-537X"),
+    person(given="Icaro Bernardes",
+           family="dos Santos Coutinho",
+           role="ctb",
+           email="icaro@bitanalytics.dev.br"))
 Description: Faça gráficos profissionais inspirtados nos jornais brasileiros.
 License: MIT + file LICENSE
+URL: https://github.com/brunomioto/ggimprensa
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
