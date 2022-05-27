@@ -12,7 +12,7 @@
 #'
 #'  Grafico:
 tema_g1 <- function(base_size = 12, base_family = "sans") {
-  (ggimprensa::tema_base(base_size = base_size, base_family = base_family)
+  (tema_base(base_size = base_size, base_family = base_family)
    + theme(plot.margin = margin(t = 10, r = 10, b = 10, l = 10),
      plot.background = element_rect(fill = "#ffffff", color = NA),
      panel.background = element_rect(fill = NA, color = NA),

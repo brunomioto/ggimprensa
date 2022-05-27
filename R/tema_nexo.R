@@ -12,7 +12,7 @@
 #'
 #'  Grafico: Gotham Rounded
 tema_nexo <- function(base_size = 12, base_family = "sans") {
-  (ggimprensa::tema_base(base_size = base_size, base_family = base_family)
+  (tema_base(base_size = base_size, base_family = base_family)
    + theme(#plot.margin = margin(t = 18, r = 20, b = 6, l = 20),
            plot.background = element_rect(fill = "#eeeeee", color = NA),
            panel.background = element_rect(fill = NA, color = NA),
