@@ -21,6 +21,7 @@ tema_nexo <- function(base_size = 12, base_family = "sans") {
                                         margin = margin(0,0,20,0)),
            plot.title.position = "plot",
            plot.caption = element_text(hjust = 0),
+           plot.caption.position = "plot",
            axis.line.x = element_line(size = 1.2),
            axis.line.y = element_blank(),
            axis.text.x = element_text(color = "#263238",

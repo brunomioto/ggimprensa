@@ -20,6 +20,7 @@ tema_poder360 <- function(base_size = 12, base_family = "sans") {
                                       color = "#263238"),
          plot.caption = element_text(hjust = 0,
                                      color = "#78919d"),
+         plot.caption.position = "plot",
          axis.text.x = element_text(color = "#263238"),
          axis.text.y = element_text(color = "#78909c"),
          axis.title = element_blank(),

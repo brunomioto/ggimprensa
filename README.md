@@ -53,7 +53,7 @@ p1 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
     subtitle = "Registros feitos de 2007 a 2009",
     caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
-  scale_y_continuous(expand = expansion(mult = c(0,0.1)))+
+  scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
   tema_poder360()
 
 p1
@@ -80,7 +80,7 @@ p2 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
     subtitle = "Registros feitos de 2007 a 2009",
     caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
-  scale_y_continuous(expand = expansion(mult = c(0,0.1)))+
+  scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
   tema_g1()
 
 p2
@@ -98,7 +98,7 @@ p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
     subtitle = "Registros feitos de 2007 a 2009",
     caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
-  scale_y_continuous(expand = expansion(mult = c(0,0.1)))+
+  scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
   tema_nexo()
 
 p3

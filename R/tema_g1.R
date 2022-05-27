@@ -21,6 +21,7 @@ tema_g1 <- function(base_size = 12, base_family = "sans") {
      plot.title.position = "plot",
      plot.caption = element_text(hjust = 0,
                                  color = "#313131"),
+     plot.caption.position = "plot",
      axis.line.x = element_line(),
      axis.line.y = element_blank(),
      axis.text.x = element_text(color = "#263238",
