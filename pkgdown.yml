@@ -1,8 +1,8 @@
-pandoc: 2.7.3
+pandoc: 2.14.2
 pkgdown: 2.0.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-05-27T03:43Z
+last_built: 2022-06-04T18:15Z
 urls:
   reference: https://brunomioto.github.io/ggimprensa/reference
   article: https://brunomioto.github.io/ggimprensa/articles
