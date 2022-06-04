@@ -9,6 +9,8 @@
 [![Twitter
 Follow](https://img.shields.io/twitter/follow/BrunoHMioto?color=%2315202B&label=Seguir%20%40BrunoHMioto&style=social)](https://twitter.com/BrunoHMioto)
 [![R-CMD-check](https://github.com/brunomioto/ggimprensa/workflows/R-CMD-check/badge.svg)](https://github.com/brunomioto/ggimprensa/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/brunomioto/ggimprensa/branch/master/graph/badge.svg)](https://app.codecov.io/gh/brunomioto/ggimprensa?branch=master)
 <!-- badges: end -->
 
 Temas dos principais jornais brasileiros para o ggplot2.
@@ -112,7 +114,7 @@ p3
 
 Todos sabemos que as **fake news** são um problema nos dias de hoje, e
 alguns podem levantar o (válido) ponto sobre este pacote contribuir com
-isso. No entanto, alguns pontos devem ser levantados:
+isso. No entanto, alguns pontos devem ser levados em consideração:
 
 -   O pacote [ggthemes](https://github.com/jrnold/ggthemes) já existe há
     um bom tempo, com temas dos principais jornais do mundo.
