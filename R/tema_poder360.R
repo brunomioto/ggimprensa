@@ -7,22 +7,40 @@
 #' @importFrom grid unit
 #' @note
 #'  Caso queira adicionar a linha superior, utilize a funcao `linha_poder360(plot)`
-tema_poder360 <- function(base_size = 12, base_family = "sans") {
+tema_poder360 <- function(base_size = 12,
+                          base_family = "sans") {
   (tema_base(base_size = base_size, base_family = base_family)
-   + theme(plot.margin = margin(t = 18, r = 20, b = 6, l = 20),
-         plot.background = element_rect(fill = "#eceff1", color = NA),
-         panel.background = element_rect(fill = NA, color = NA),
-         plot.title = element_text(hjust = 0.5,
-                                   color = "#0a4b7f",
-                                   face = "bold",
-                                   size = rel(2)),
-         plot.subtitle = element_text(hjust = 0.5,
-                                      color = "#263238"),
-         plot.caption = element_text(hjust = 0,
-                                     color = "#78919d"),
+   + theme(
+     plot.margin = margin(t = 18, r = 20, b = 6, l = 20),
+         plot.background = element_rect(
+           fill = "#eceff1",
+           color = NA
+           ),
+         panel.background = element_rect(
+           fill = NA,
+           color = NA
+           ),
+         plot.title = element_text(
+           hjust = 0.5,
+           color = "#0a4b7f",
+           face = "bold",
+           size = rel(2)
+           ),
+         plot.subtitle = element_text(
+           hjust = 0.5,
+           color = "#263238"
+           ),
+         plot.caption = element_text(
+           hjust = 0,
+           color = "#78919d"
+           ),
          plot.caption.position = "plot",
-         axis.text.x = element_text(color = "#263238"),
-         axis.text.y = element_text(color = "#78909c"),
+         axis.text.x = element_text(
+           color = "#263238"
+           ),
+         axis.text.y = element_text(
+           color = "#78909c"
+           ),
          axis.title = element_blank(),
          axis.ticks = element_blank(),
          panel.grid = element_blank()
@@ -33,9 +51,8 @@ tema_poder360 <- function(base_size = 12, base_family = "sans") {
 
 #' Adiciona linha superior
 #'
-#' @param plot
+#' @param plot O grafico criado anteriormente com a funcao tema_poder360()
 #'
-#' @return
 #' @export
 #'
 linha_poder360 <- function(plot){

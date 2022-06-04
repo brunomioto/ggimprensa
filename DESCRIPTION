@@ -15,5 +15,8 @@ LazyData: true
 RoxygenNote: 7.1.2
 Imports: 
     cowplot,
-    ggplot2,
+    ggplot2 (>= 3.0.0),
     grid
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

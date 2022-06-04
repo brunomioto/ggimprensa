@@ -7,10 +7,7 @@
 linha_poder360(plot)
 }
 \arguments{
-\item{plot}{}
-}
-\value{
-
+\item{plot}{O grafico criado anteriormente com a funcao tema_poder360()}
 }
 \description{
 Adiciona linha superior

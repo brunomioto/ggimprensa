@@ -8,9 +8,9 @@
 #' @note
 #'  Fontes originais
 #'
-#'  Titulo e subtitulo:
+#'  Titulo e subtitulo: Open Sans
 #'
-#'  Grafico:
+#'  Grafico: Open Sans
 tema_g1 <- function(base_size = 12, base_family = "sans") {
   (tema_base(base_size = base_size, base_family = base_family)
    + theme(plot.margin = margin(t = 10, r = 10, b = 10, l = 10),

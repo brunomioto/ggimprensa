@@ -19,6 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![pix](https://img.shields.io/badge/Apoie%20com-PIX-brightgreen)](https://www.brunomioto.com.br/pix)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BrunoHMioto?color=%2315202B&label=Seguir%20%40BrunoHMioto&style=social)](https://twitter.com/BrunoHMioto)
+[![R-CMD-check](https://github.com/brunomioto/ggimprensa/workflows/R-CMD-check/badge.svg)](https://github.com/brunomioto/ggimprensa/actions)
 <!-- badges: end -->
 
 Temas dos principais jornais brasileiros para o ggplot2.
@@ -63,7 +64,7 @@ pinguins_grupos <- pinguins %>%
 
 ### Poder 360
 
-```{r exemplo poder360}
+```{r exemplo_poder360}
 p1 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
   geom_col(fill = "#fd541e")+
   labs(
@@ -84,7 +85,7 @@ linha_poder360(p1)
 
 ### G1
 
-```{r exemplo g1}
+```{r exemplo_g1}
 p2 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
   geom_col(fill = "#c6160d")+
   labs(
@@ -100,7 +101,7 @@ p2
 
 ### Nexo
 
-```{r exemplo nexo}
+```{r exemplo_nexo}
 p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
   geom_col(fill = "#15c5ce")+
   labs(

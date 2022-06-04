@@ -17,8 +17,8 @@ Tema inspirado nos graficos do G1 - globo.com
 \note{
 Fontes originais
 
- Titulo e subtitulo:
+ Titulo e subtitulo: Open Sans
 
- Grafico:
+ Grafico: Open Sans
 }
 \concept{themes g1}
