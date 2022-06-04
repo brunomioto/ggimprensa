@@ -2,7 +2,6 @@
 
 export(linha_poder360)
 export(tema_base)
-export(tema_folha)
 export(tema_g1)
 export(tema_nexo)
 export(tema_poder360)
