@@ -51,18 +51,6 @@ tema_folha <- function(base_size = 12, base_family = "sans") {
 #'
 #' @return Uma função de escala do ggplot2 que aplica a paleta de cores Folha.
 #' @export
-#'
-#' @examples
-#' # Exemplo de uso com ggplot
-#' library(ggplot2)
-#' ggplot(mtcars, aes(factor(cyl), fill = factor(cyl))) +
-#'   geom_bar() +
-#'   scale_fill_folha()
-#'
-#' # Exemplo com o parâmetro `na.value` personalizado
-#' ggplot(mtcars, aes(factor(cyl), fill = factor(cyl))) +
-#'   geom_bar() +
-#'   scale_fill_folha(na.value = "grey80")
 scale_fill_folha <- function(...,
                              na.value = "grey50") {
 
@@ -90,18 +78,6 @@ scale_fill_folha <- function(...,
 #'
 #' @return Uma função de escala do ggplot2 que aplica a paleta de cores Folha.
 #' @export
-#'
-#' @examples
-#' # Exemplo de uso com ggplot
-#' library(ggplot2)
-#' ggplot(mtcars, aes(factor(cyl), color = factor(cyl))) +
-#'   geom_bar() +
-#'   scale_color_folha()
-#'
-#' # Exemplo com o parâmetro `na.value` personalizado
-#' ggplot(mtcars, aes(factor(cyl), color = factor(cyl))) +
-#'   geom_bar() +
-#'   scale_color_folha(na.value = "grey80")
 scale_color_folha <- function(...,
                               na.value = "grey50") {
 

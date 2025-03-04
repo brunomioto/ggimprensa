@@ -1,8 +1,8 @@
 title: ggimprensa
 url: https://brunomioto.github.io/ggimprensa/
 template:
-  params:
-    bootswatch: flatly
+  bootstrap: 5
+  bootswatch: flatly
 
 authors:
   Bruno Mioto:

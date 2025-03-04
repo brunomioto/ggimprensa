@@ -17,15 +17,3 @@ Uma função de escala do ggplot2 que aplica a paleta de cores Folha.
 \description{
 Uma escala personalizada do ggplot2 para a estética de `color` usando a paleta de cores Folha. A paleta é composta por um conjunto de nove cores distintas, projetadas para serem usadas em variáveis discretas de cor em gráficos do ggplot2.
 }
-\examples{
-# Exemplo de uso com ggplot
-library(ggplot2)
-ggplot(mtcars, aes(factor(cyl), color = factor(cyl))) +
-  geom_bar() +
-  scale_color_folha()
-
-# Exemplo com o parâmetro `na.value` personalizado
-ggplot(mtcars, aes(factor(cyl), color = factor(cyl))) +
-  geom_bar() +
-  scale_color_folha(na.value = "grey80")
-}

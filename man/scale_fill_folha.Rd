@@ -19,15 +19,3 @@ Uma escala personalizada do ggplot2 para a estética de `fill` usando a paleta d
 A paleta é composta por um conjunto de nove cores distintas,
 projetadas para serem usadas em variáveis discretas de preenchimento em gráficos do ggplot2.
 }
-\examples{
-# Exemplo de uso com ggplot
-library(ggplot2)
-ggplot(mtcars, aes(factor(cyl), fill = factor(cyl))) +
-  geom_bar() +
-  scale_fill_folha()
-
-# Exemplo com o parâmetro `na.value` personalizado
-ggplot(mtcars, aes(factor(cyl), fill = factor(cyl))) +
-  geom_bar() +
-  scale_fill_folha(na.value = "grey80")
-}
