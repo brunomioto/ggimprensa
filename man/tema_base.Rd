@@ -24,6 +24,6 @@ This theme takes \code{\link[ggplot2]{theme_gray}()} and sets all
 \code{colour} and \code{fill} values to \code{NULL}, except for the top-level
 elements (\code{line}, \code{rect}, and \code{title}), which have
 \code{colour = "black"}, and \code{fill = "white"}. This leaves the spacing
-and-non colour defaults of the default \pkg{ggplot2} themes in place.
+and-non color defaults of the default \pkg{ggplot2} themes in place.
 }
 \concept{themes}

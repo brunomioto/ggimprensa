@@ -17,8 +17,8 @@ Tema inspirado nos graficos do jornal Folha de Sao Paulo
 \note{
 Fontes originais
 
- Titulo e subtitulo:
+ Titulo e subtitulo: FolhaGrafico
 
- Grafico:
+ Grafico: FolhaGrafico
 }
 \concept{themes folha}

@@ -17,7 +17,8 @@ RoxygenNote: 7.3.1
 Imports: 
     cowplot,
     ggplot2 (>= 3.5),
-    grid
+    grid,
+    scales
 Suggests: 
     covr,
     testthat (>= 3.0.0)

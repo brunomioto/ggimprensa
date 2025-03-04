@@ -31,7 +31,7 @@ tema_g1 <- function(base_size = 12, base_family = "sans") {
                                 vjust = 0),
      axis.title = element_blank(),
      axis.ticks = element_blank(),
-     panel.grid = element_line(color = "#d9d9d9", size = 0.1),
+     panel.grid = element_line(color = "#d9d9d9", linewidth = 0.1),
      panel.grid.major.x = element_blank(),
      panel.grid.minor = element_blank()
    ))
