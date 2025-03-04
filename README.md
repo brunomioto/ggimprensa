@@ -5,12 +5,11 @@
 
 <!-- badges: start -->
 
-[![pix](https://img.shields.io/badge/Apoie%20com-PIX-brightgreen)](https://www.brunomioto.com.br/pix)
 [![Twitter
 Follow](https://img.shields.io/twitter/follow/BrunoHMioto?color=%2315202B&label=Seguir%20%40BrunoHMioto&style=social)](https://twitter.com/BrunoHMioto)
-[![R-CMD-check](https://github.com/brunomioto/ggimprensa/workflows/R-CMD-check/badge.svg)](https://github.com/brunomioto/ggimprensa/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/brunomioto/ggimprensa/branch/master/graph/badge.svg)](https://app.codecov.io/gh/brunomioto/ggimprensa?branch=master)
+[![R-CMD-check](https://github.com/brunomioto/ggimprensa/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brunomioto/ggimprensa/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Temas dos principais jornais brasileiros para o ggplot2.
@@ -26,8 +25,8 @@ bonitos de forma fácil e rápida.
 Você pode instalar o pacote ggimprensa com a seguinte função:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("brunomioto/ggimprensa")
+# install.packages("remotes")
+remotes::install_github("brunomioto/ggimprensa")
 ```
 
 ## Uso

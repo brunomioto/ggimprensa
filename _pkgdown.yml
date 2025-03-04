@@ -12,6 +12,9 @@ reference:
   - title: Temas dos jornais brasileiros
     contents:
     - starts_with("tema_")
+  - title: Escalas de cores
+    contents:
+    - starts_with("scale_")
   - title: Outras funções
     contents:
       - '`linha_poder360`'
