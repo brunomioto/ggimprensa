@@ -10,7 +10,7 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-",
   out.width = "80%",
-  dpi = 96
+  dpi = 300
 )
 ```
 
@@ -19,8 +19,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![pix](https://img.shields.io/badge/Apoie%20com-PIX-brightgreen)](https://www.brunomioto.com.br/pix)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BrunoHMioto?color=%2315202B&label=Seguir%20%40BrunoHMioto&style=social)](https://twitter.com/BrunoHMioto)
-[![R-CMD-check](https://github.com/brunomioto/ggimprensa/workflows/R-CMD-check/badge.svg)](https://github.com/brunomioto/ggimprensa/actions)
 [![Codecov test coverage](https://codecov.io/gh/brunomioto/ggimprensa/branch/master/graph/badge.svg)](https://app.codecov.io/gh/brunomioto/ggimprensa?branch=master)
+[![R-CMD-check](https://github.com/brunomioto/ggimprensa/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brunomioto/ggimprensa/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Temas dos principais jornais brasileiros para o ggplot2.
@@ -42,11 +42,13 @@ devtools::install_github("brunomioto/ggimprensa")
 
 Os temas existentes no pacote atualmente são:
 
-- `tema_poder360()` referente ao jornal [Poder 360](https://www.poder360.com.br/)
+- `tema_folha()` referente ao jornal [Folha de São Paulo](https://www.folha.uol.com.br/)  
 
 - `tema_g1()` referente ao jornal [g1 - Globo](https://g1.globo.com/)
 
 - `tema_nexo()` referente ao [Nexo Jornal](https://www.nexojornal.com.br/)
+
+- `tema_poder360()` referente ao jornal [Poder 360](https://www.poder360.com.br/)
 
 ```{r pacote, warning=FALSE}
 library("ggplot2")
@@ -58,36 +60,57 @@ library("ggimprensa")
 library("dados")
 library("dplyr")
 
-pinguins_grupos <- pinguins %>% 
-  group_by(ilha) %>% 
+pinguins_grupos <- pinguins |> 
+  group_by(ilha) |>  
   count()
 ```
 
-### Poder 360
 
-```{r exemplo_poder360}
-p1 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
-  geom_col(fill = "#fd541e")+
+### Folha de São Paulo
+
+```{r exemplo_folha}
+p1 <- pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
+  geom_col(fill = "#f47080")+
   labs(
     title = "Número de pinguins por ilha",
     subtitle = "Registros feitos de 2007 a 2009",
     caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
   scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
-  tema_poder360()
+  tema_folha()
 
 p1
 ```
 
-Caso queira adicionar a faixa superior ao gráfico, utilize a função `linha_poder360()`
-```{r linha}
-linha_poder360(p1)
+#### Paleta de cores - Folha de São Paulo
+
+Para a Folha, também é possível colorir os gráficos com a paleta de cores do jornal. 
+Para isso, utilize a função `scale_fill_folha()` para preenchimentos e `scale_color_folha()` para contornos.
+
+```{r paleta_folha}
+p1_paleta <- pinguins |> 
+  group_by(especie, ilha) |> 
+  count() |> 
+  ggplot(aes(x = ilha, y = n)) +
+  geom_col(aes(fill = especie))+
+  labs(
+    title = "Número de pinguins por ilha",
+    subtitle = "Registros feitos de 2007 a 2009",
+    caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
+  )+
+  scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
+  scale_fill_folha()+
+  tema_folha()
+
+p1_paleta
 ```
 
 ### G1
 
 ```{r exemplo_g1}
-p2 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
+p2 <-  pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
   geom_col(fill = "#c6160d")+
   labs(
     title = "Número de pinguins por ilha",
@@ -103,7 +126,8 @@ p2
 ### Nexo
 
 ```{r exemplo_nexo}
-p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
+p3 <-  pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
   geom_col(fill = "#15c5ce")+
   labs(
     title = "Número de pinguins por ilha",
@@ -114,6 +138,29 @@ p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
   tema_nexo()
 
 p3
+```
+
+
+### Poder 360
+
+```{r exemplo_poder360}
+p4 <-  pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
+  geom_col(fill = "#fd541e")+
+  labs(
+    title = "Número de pinguins por ilha",
+    subtitle = "Registros feitos de 2007 a 2009",
+    caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
+  )+
+  scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
+  tema_poder360()
+
+p4
+```
+
+Caso queira adicionar a faixa superior ao gráfico, utilize a função `linha_poder360()`
+```{r linha}
+linha_poder360(p4)
 ```
 
 ## Sobre fake news

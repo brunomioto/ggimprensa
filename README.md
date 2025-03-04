@@ -34,50 +34,72 @@ devtools::install_github("brunomioto/ggimprensa")
 
 Os temas existentes no pacote atualmente são:
 
--   `tema_poder360()` referente ao jornal [Poder
-    360](https://www.poder360.com.br/)
+- `tema_folha()` referente ao jornal [Folha de São
+  Paulo](https://www.folha.uol.com.br/)
 
--   `tema_g1()` referente ao jornal [g1 - Globo](https://g1.globo.com/)
+- `tema_g1()` referente ao jornal [g1 - Globo](https://g1.globo.com/)
 
--   `tema_nexo()` referente ao [Nexo
-    Jornal](https://www.nexojornal.com.br/)
+- `tema_nexo()` referente ao [Nexo
+  Jornal](https://www.nexojornal.com.br/)
+
+- `tema_poder360()` referente ao jornal [Poder
+  360](https://www.poder360.com.br/)
 
 ``` r
 library("ggplot2")
 library("ggimprensa")
 ```
 
-### Poder 360
+### Folha de São Paulo
 
 ``` r
-p1 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
-  geom_col(fill = "#fd541e")+
+p1 <- pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
+  geom_col(fill = "#f47080")+
   labs(
     title = "Número de pinguins por ilha",
     subtitle = "Registros feitos de 2007 a 2009",
     caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
   )+
   scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
-  tema_poder360()
+  tema_folha()
 
 p1
 ```
 
-<img src="man/figures/README-exemplo_poder360-1.png" width="80%" />
+<img src="man/figures/README-exemplo_folha-1.png" width="80%" />
 
-Caso queira adicionar a faixa superior ao gráfico, utilize a função
-`linha_poder360()`
+#### Paleta de cores - Folha de São Paulo
+
+Para a Folha, também é possível colorir os gráficos com a paleta de
+cores do jornal. Para isso, utilize a função `scale_fill_folha()` para
+preenchimentos e `scale_color_folha()` para contornos.
 
 ``` r
-linha_poder360(p1)
+p1_paleta <- pinguins |> 
+  group_by(especie, ilha) |> 
+  count() |> 
+  ggplot(aes(x = ilha, y = n)) +
+  geom_col(aes(fill = especie))+
+  labs(
+    title = "Número de pinguins por ilha",
+    subtitle = "Registros feitos de 2007 a 2009",
+    caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
+  )+
+  scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
+  scale_fill_folha()+
+  tema_folha()
+
+p1_paleta
 ```
 
-<img src="man/figures/README-linha-1.png" width="80%" />
+<img src="man/figures/README-paleta_folha-1.png" width="80%" />
 
 ### G1
 
 ``` r
-p2 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
+p2 <-  pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
   geom_col(fill = "#c6160d")+
   labs(
     title = "Número de pinguins por ilha",
@@ -95,7 +117,8 @@ p2
 ### Nexo
 
 ``` r
-p3 <- ggplot(pinguins_grupos, aes(x = ilha, y = n)) +
+p3 <-  pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
   geom_col(fill = "#15c5ce")+
   labs(
     title = "Número de pinguins por ilha",
@@ -110,25 +133,53 @@ p3
 
 <img src="man/figures/README-exemplo_nexo-1.png" width="80%" />
 
+### Poder 360
+
+``` r
+p4 <-  pinguins_grupos |> 
+  ggplot(aes(x = ilha, y = n)) +
+  geom_col(fill = "#fd541e")+
+  labs(
+    title = "Número de pinguins por ilha",
+    subtitle = "Registros feitos de 2007 a 2009",
+    caption = "Fonte: {palmerpenguins} traduzido no pacote {dados}"
+  )+
+  scale_y_continuous(expand = expansion(mult = c(0,0.05)))+
+  tema_poder360()
+
+p4
+```
+
+<img src="man/figures/README-exemplo_poder360-1.png" width="80%" />
+
+Caso queira adicionar a faixa superior ao gráfico, utilize a função
+`linha_poder360()`
+
+``` r
+linha_poder360(p4)
+```
+
+<img src="man/figures/README-linha-1.png" width="80%" />
+
 ## Sobre fake news
 
 Todos sabemos que as **fake news** são um problema nos dias de hoje, e
 alguns podem levantar o (válido) ponto sobre este pacote contribuir com
 isso. No entanto, alguns pontos devem ser levados em consideração:
 
--   O pacote [ggthemes](https://github.com/jrnold/ggthemes) já existe há
-    um bom tempo, com temas dos principais jornais do mundo.
+- O pacote [ggthemes](https://github.com/jrnold/ggthemes) já existe há
+  um bom tempo, com temas dos principais jornais do mundo.
 
--   Para criar uma notícia falsa, é muito mais simples criar uma
-    montagem com o tema dos gráficos do que programar com ggplot2. Além
-    disso, sabemos que uma simples montagem já é mais que o suficiente
-    para uma notícia falsa circular.
+- Para criar uma notícia falsa, é muito mais simples criar uma montagem
+  com o tema dos gráficos do que programar com ggplot2. Além disso,
+  sabemos que uma simples montagem já é mais que o suficiente para uma
+  notícia falsa circular.
 
--   O **objetivo** principal deste pacote é ajudar os usuários a criar
-    gráficos mais bonitos de forma fácil e rápida. Não são todos os
-    usuários que sabem quais as melhores práticas de visualização de
-    dados, mas reconhecem que alguns jornais brasileiros fazem um ótimo
-    trabalho e podem utilizar isso como um ponto de partida.
+- O **objetivo** principal deste pacote é ajudar os usuários a criar
+  gráficos mais bonitos de forma fácil e rápida. Não são todos os
+  usuários que sabem quais as melhores práticas de visualização de
+  dados, mas reconhecem que alguns jornais brasileiros fazem um ótimo
+  trabalho e podem utilizar isso como um ponto de partida.
 
 ## Melhorias e sugestões
 

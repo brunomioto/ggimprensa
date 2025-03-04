@@ -11,11 +11,8 @@ authors:
 reference:
   - title: Temas dos jornais brasileiros
     contents:
-      - '`tema_poder360`'
-      - '`tema_g1`'
-      - '`tema_nexo`'
+    - starts_with("tema_")
   - title: Outras funções
     contents:
       - '`linha_poder360`'
-      - '`tema_base`'
 

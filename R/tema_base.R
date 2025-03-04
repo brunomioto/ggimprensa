@@ -11,12 +11,11 @@
 #' \code{colour} and \code{fill} values to \code{NULL}, except for the top-level
 #' elements (\code{line}, \code{rect}, and \code{title}), which have
 #' \code{colour = "black"}, and \code{fill = "white"}. This leaves the spacing
-#' and-non colour defaults of the default \pkg{ggplot2} themes in place.
+#' and-non color defaults of the default \pkg{ggplot2} themes in place.
 #'
 #' @inheritParams ggplot2::theme_grey
 #'
 #' @family themes
-#' @export
 #' @importFrom ggplot2 theme_grey
 tema_base <- function(base_size=12, base_family="") {
   thm <- theme_grey(base_size = base_size, base_family = base_family)
